@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Lzici
+#tecfo
 #Copyright (C) 2026 lazypaCCap
 #This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
@@ -8,8 +8,8 @@ import subprocess
 import os
 import json
 #定义目录
-目录 = os.path.expanduser("~/.config/Lzici")
-设置文件 = os.path.expanduser("~/.config/Lzici/设置.json")
+目录 = os.path.expanduser("~/.config/tecfo")
+设置文件 = os.path.expanduser("~/.config/tecfo/设置.json")
 #判断，创建，写默认
 if os.path.isdir(目录):
     引导 = False
