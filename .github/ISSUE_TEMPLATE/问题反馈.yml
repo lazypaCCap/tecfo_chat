@@ -43,5 +43,5 @@ body:
   - type: textarea
     id: 05
     attributes:
-      label:问题描述
+      label: 问题描述
       placeholder: 请详细描述您遇到的问题。
