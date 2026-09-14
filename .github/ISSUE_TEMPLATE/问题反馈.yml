@@ -40,7 +40,7 @@ body:
       placeholder: 输入你的操作系统版本，如Debian13,Windows10
     validations:
       required: true
-  - type: textare
+  - type: textarea
     id: 05
     attributes:
       label:问题描述
