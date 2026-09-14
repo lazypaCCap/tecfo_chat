@@ -44,4 +44,4 @@ body:
     id: 05
     attributes:
       label:问题描述
-      placeholder:  请详细描述您遇到的问题。
+      placeholder: 请详细描述您遇到的问题。
