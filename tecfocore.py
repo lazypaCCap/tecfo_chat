@@ -15,7 +15,7 @@ if os.path.isdir(目录):
     引导 = False
 else:
     os.makedirs(目录, exist_ok=True)
-    日志目录 = os.path.expanduser("~/.config/Lzici/log")
+    日志目录 = os.path.expanduser("~/.config/tecfo/log")
     os.makedirs(日志目录, exist_ok=True)
     默认数据 = {"温度": "0.6","重复惩罚": "1.1","最大生成长度": "8192","上下文长度": "16384","top_k": "40","top_p": "0.9","停止词": "","存活时间": "120"}
     with open(设置文件, "w", encoding="utf-8") as f:
@@ -37,7 +37,7 @@ class core:
     def askn(self,问题):
         种子 = str(int.from_bytes(os.urandom(4), "big") % 1000000 + 1)
         结果 = subprocess.run(
-            ["./tecfoCLI.py", 问题, 温度,重复惩罚,种子,最大生成长度,上下文长度,top_k,top_p,停止词,存活时间,模型名,"False"],
+            ["python3", "tecfoCLI.py", 问题, 温度,重复惩罚,种子,最大生成长度,上下文长度,top_k,top_p,停止词,存活时间,模型名,"False"],
             capture_output=True,
             text=True
         )
